@@ -1,16 +1,16 @@
 import React from 'react'
 import './App.css'
-import Read from '../src/components/Read'
 import Tutorial from '../src/components/Tutorial'
 import Tool from '../src/components/Tool'
-
+import ArrayLink from '../src/components/ArrayLink'
+import {Readlinks} from '../src/components/Read/link'
 const App: React.FC = () => {
   return (
     <div className='App'>
       <div className='pure-g'>
         <div className='pure-u-1-3'>
           <h2>阅读</h2>
-          <Read />
+          <ArrayLink links={Readlinks}/>
           <h2>教程</h2>
           <Tutorial />
         </div>

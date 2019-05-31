@@ -1,8 +1,13 @@
 import React from 'react'
-import { Readlinks } from './link'
 
-const Read: React.FC = () => {
-  const readLinks = Readlinks.map(link => {
+export interface LinkProps {
+  links: Array<{value:string,label:string}>;
+}
+
+
+
+const Read: React.FC<LinkProps> = (props) => {
+  const readLinks =props.links.map(link => {
     return (
       <li key={link.value}>
         <a href={link.value} target='_blank' rel='noopener noreferrer'>
