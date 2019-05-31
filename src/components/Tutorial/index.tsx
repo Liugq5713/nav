@@ -2,10 +2,10 @@ import React from 'react'
 import { TutorialLinks } from './link'
 
 const Tutorial: React.FC = () => {
-  const links = TutorialLinks.map(link => {
+  const links = TutorialLinks.map((link, idx) => {
     return (
       <li key={link.value}>
-        <a href={link.value} target='_blank'>
+        <a href={link.value} target='_blank' rel='noopener noreferrer'>
           {link.label}
         </a>
       </li>

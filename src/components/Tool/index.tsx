@@ -3,24 +3,27 @@ import { toolLinks } from './link'
 
 const Tutorial: React.FC = () => {
   const links = Object.keys(toolLinks).map(item => {
-    const title = toolLinks[item].label
-    const sublinks = toolLinks[item].children.map(link => {
-      return (
-        <li key={link.value}>
-          <a href={link.value} target='_blank'>
-            {link.label}
-          </a>
-        </li>
-      )
-    })
+    const title = toolLinks[item.toString()].label
+    const sublinks = toolLinks[item.toString()].children.map(
+      (link: { value: string | undefined; label: React.ReactNode }) => {
+        return (
+          <li key={link.value}>
+            <a rel='noopener noreferrer' href={link.value} target='_blank'>
+              {link.label}
+            </a>
+          </li>
+        )
+      }
+    )
     return (
-      <div>
+      <div key={title}>
         <h2>{title}</h2>
         <ul>{sublinks}</ul>
       </div>
     )
   })
-  return <ul>{links}</ul>
+
+  return <div> {links}</div>
 }
 
 export default Tutorial

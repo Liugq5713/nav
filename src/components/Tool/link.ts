@@ -1,4 +1,23 @@
-export const toolLinks = {
+interface link {
+  code?: {
+    label: string
+    children: Object
+  }
+  tool?: {
+    label: string
+    children: Object
+  }
+  pic?: {
+    label: string
+    children: Object
+  }
+  resource?: {
+    label: string
+    children: Object
+  }
+  [propName: string]: any
+}
+export const toolLinks: link = {
   code: {
     label: '代码',
     children: [
@@ -33,7 +52,7 @@ export const toolLinks = {
     ]
   },
   tool: {
-    label: '',
+    label: '文件处理',
     children: [
       {
         label: 'PDF 处理',

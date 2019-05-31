@@ -5,7 +5,7 @@ const Read: React.FC = () => {
   const readLinks = Readlinks.map(link => {
     return (
       <li key={link.value}>
-        <a href={link.value} target='_blank'>
+        <a href={link.value} target='_blank' rel='noopener noreferrer'>
           {link.label}
         </a>
       </li>
