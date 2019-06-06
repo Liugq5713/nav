@@ -10,5 +10,9 @@ export const TutorialLinks = [
   {
     label: 'git 撤销工作',
     value: 'https://zhuanlan.zhihu.com/p/42929114'
+  },
+  {
+    label: 'Linux',
+    value: 'https://www.digitalocean.com/community'
   }
 ]

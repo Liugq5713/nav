@@ -17,7 +17,7 @@ interface link {
   }
   [propName: string]: any
 }
-export const toolLinks: link = {
+export const ToolLinks: link = {
   code: {
     label: '代码',
     children: [

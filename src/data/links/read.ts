@@ -1,4 +1,4 @@
-export const Readlinks = [
+export const ReadLinks = [
   {
     label: '奇舞周刊',
     value: 'https://weekly.75team.com/'

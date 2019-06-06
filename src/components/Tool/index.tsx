@@ -1,10 +1,10 @@
 import React from 'react'
-import { toolLinks } from './link'
+import { ToolLinks } from '../../data/links/tool'
 
 const Tutorial: React.FC = () => {
-  const links = Object.keys(toolLinks).map(item => {
-    const title = toolLinks[item.toString()].label
-    const sublinks = toolLinks[item.toString()].children.map(
+  const links = Object.keys(ToolLinks).map(item => {
+    const title = ToolLinks[item.toString()].label
+    const sublinks = ToolLinks[item.toString()].children.map(
       (link: { value: string | undefined; label: React.ReactNode }) => {
         return (
           <li key={link.value}>
