@@ -4,6 +4,7 @@ import Tool from '../src/components/Tool'
 import ArrayLink from '../src/components/ArrayLink'
 import { ReadLinks } from './data/links/read'
 import { TutorialLinks } from './data/links/tutorial'
+import { SelfLinks } from './data/links/self'
 const App: React.FC = () => {
   return (
     <div className='App'>
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         </div>
         <div className='pure-u-1-3'>
           <h1>个人</h1>
+          <ArrayLink links={SelfLinks} />
         </div>
       </div>
     </div>
