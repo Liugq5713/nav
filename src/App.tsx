@@ -1,10 +1,11 @@
 import React from 'react'
 import './App.css'
-import Tool from '../src/components/Tool'
 import ArrayLink from '../src/components/ArrayLink'
+import ObjectLink from '../src/components/ObjectLink'
 import { ReadLinks } from './data/links/read'
 import { TutorialLinks } from './data/links/tutorial'
 import { SelfLinks } from './data/links/self'
+import { ToolLinks } from './data/links/tool'
 const App: React.FC = () => {
   return (
     <div className='App'>
@@ -17,7 +18,7 @@ const App: React.FC = () => {
         </div>
         <div className='pure-u-1-3'>
           <h1>工具</h1>
-          <Tool />
+          <ObjectLink links={ToolLinks} />
         </div>
         <div className='pure-u-1-3'>
           <h1>个人</h1>
