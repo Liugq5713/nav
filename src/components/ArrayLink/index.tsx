@@ -1,13 +1,11 @@
 import React from 'react'
 
 export interface LinkProps {
-  links: Array<{value:string,label:string}>;
+  links: Array<{ value: string; label: string }>
 }
 
-
-
-const Read: React.FC<LinkProps> = (props) => {
-  const readLinks =props.links.map(link => {
+const ArrayLink: React.FC<LinkProps> = props => {
+  const links = props.links.map(link => {
     return (
       <li key={link.value}>
         <a href={link.value} target='_blank' rel='noopener noreferrer'>
@@ -16,7 +14,7 @@ const Read: React.FC<LinkProps> = (props) => {
       </li>
     )
   })
-  return <ul>{readLinks}</ul>
+  return <ul>{links}</ul>
 }
 
-export default Read
+export default ArrayLink
