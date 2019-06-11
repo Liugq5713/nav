@@ -1,5 +1,9 @@
 export const BookLinks = [
   {
+    label: '编程中文书籍索引',
+    value: 'https://github.com/justjavac/free-programming-books-zh_CN'
+  },
+  {
     label: 'Linux 命令行',
     value: 'http://billie66.github.io/TLCL/book/'
   },
