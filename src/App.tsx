@@ -13,17 +13,17 @@ const App: React.FC = () => {
     <div className='App'>
       <GithubCorner />
       <div className='pure-g'>
-        <div className='pure-u-1-3'>
+        <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
           <h2>阅读</h2>
           <ArrayLink links={ReadLinks} />
           <h2>教程</h2>
           <ArrayLink links={TutorialLinks} />
         </div>
-        <div className='pure-u-1-3'>
+        <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
           <h1>工具</h1>
           <ObjectLink links={ToolLinks} />
         </div>
-        <div className='pure-u-1-3'>
+        <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
           <h2>收集</h2>
           <ArrayLink links={BookLinks} />
           <h2>Git</h2>
