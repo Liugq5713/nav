@@ -24,7 +24,7 @@ const App: React.FC = () => {
           <ObjectLink links={ToolLinks} />
         </div>
         <div className='pure-u-1-3'>
-          <h2>书籍</h2>
+          <h2>收集</h2>
           <ArrayLink links={BookLinks} />
           <h2>Git</h2>
           <ArrayLink links={GitLinks} />
