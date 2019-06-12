@@ -1,7 +1,8 @@
 export const ReadLinks = [
   {
     label: '奇舞周刊',
-    value: 'https://weekly.75team.com/'
+    value: 'https://weekly.75team.com/',
+    title: '360出品'
   },
   {
     label: '冴羽写博客',

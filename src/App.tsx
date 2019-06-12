@@ -5,7 +5,13 @@ import ObjectLink from '../src/components/ObjectLink'
 import GithubCorner from '../src/components/GithubCorner'
 import { ReadLinks } from './data/links/read'
 import { TutorialLinks } from './data/links/tutorial'
-import { BookLinks, GitLinks, WebpackLinks } from './data/links/book'
+import {
+  BookLinks,
+  GitLinks,
+  WebpackLinks,
+  CssLinks,
+  GithubLinks
+} from './data/links/book'
 // import { SelfLinks } from './data/links/self'
 import { ToolLinks } from './data/links/tool'
 const App: React.FC = () => {
@@ -14,22 +20,19 @@ const App: React.FC = () => {
       <GithubCorner />
       <div className='pure-g'>
         <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
-          <h2>阅读</h2>
-          <ArrayLink links={ReadLinks} />
-          <h2>教程</h2>
-          <ArrayLink links={TutorialLinks} />
+          <ArrayLink title='阅读' links={ReadLinks} />
+          <ArrayLink title='教程' links={TutorialLinks} />
         </div>
         <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
           <h1>工具</h1>
           <ObjectLink links={ToolLinks} />
         </div>
         <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
-          <h2>收集</h2>
-          <ArrayLink links={BookLinks} />
-          <h2>Git</h2>
-          <ArrayLink links={GitLinks} />
-          <h2>Webpack</h2>
-          <ArrayLink links={WebpackLinks} />
+          <ArrayLink title='收集' links={BookLinks} />
+          <ArrayLink title='Git' links={GitLinks} />
+          <ArrayLink title='Webpack' links={WebpackLinks} />
+          <ArrayLink title='CSS' links={CssLinks} />
+          <ArrayLink title='Github' links={GithubLinks} />
         </div>
       </div>
     </div>
