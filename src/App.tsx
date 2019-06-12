@@ -26,7 +26,11 @@ const App: React.FC = () => {
     GitLinks,
     WebpackLinks,
     CssLinks,
-    GithubLinks
+    GithubLinks,
+    CodeLinks,
+    FileLinks,
+    ImageLinks,
+    SourceLinks
   )
   return (
     <div className='App'>
