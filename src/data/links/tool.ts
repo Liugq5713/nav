@@ -84,11 +84,17 @@ export const SourceLinks = [
     value: 'https://uigradients.com/#Wiretap'
   },
   {
-    label: '非常好看的图片',
-    value: 'https://dribbble.com/'
+    label: 'dribbble',
+    value: 'https://dribbble.com/',
+    title: '设计作品的交流平台'
   },
   {
-    label: '免费高清图片',
+    label: 'Behance',
+    value: 'https://www.behance.net/',
+    title: '系列设计作品开放平台'
+  },
+  {
+    label: 'pixabay',
     value: 'https://pixabay.com/zh/photos/'
   },
   {

@@ -10,7 +10,8 @@ import {
   GitLinks,
   WebpackLinks,
   CssLinks,
-  GithubLinks
+  GithubLinks,
+  CommunityLinks
 } from './data/links/book'
 // import { SelfLinks } from './data/links/self'
 import {
@@ -27,6 +28,7 @@ const App: React.FC = () => {
     WebpackLinks,
     CssLinks,
     GithubLinks,
+    CommunityLinks,
     CodeLinks,
     FileLinks,
     ImageLinks,
@@ -39,6 +41,7 @@ const App: React.FC = () => {
         <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
           <Search options={options} />
           <ArrayLink title='阅读' links={ReadLinks} />
+          <ArrayLink title='社区' links={CommunityLinks} />
           <ArrayLink title='教程' links={TutorialLinks} />
           <ArrayLink title='收集' links={BookLinks} />
         </div>

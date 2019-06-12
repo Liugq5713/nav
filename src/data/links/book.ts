@@ -104,3 +104,20 @@ export const GithubLinks = [
     title: 'javascript资源列表，有中文版'
   }
 ]
+
+export const CommunityLinks = [
+  {
+    label: '掘金',
+    value: 'https://juejin.im/timeline'
+  },
+  {
+    label: 'V2EX',
+    value: 'https://www.v2ex.com/',
+    title: '一个关于分享和探索的地方'
+  },
+  {
+    label: 'jstips',
+    value: 'http://www.jstips.co/',
+    title: '每天推出一个JS技巧的网站'
+  }
+]
