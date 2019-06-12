@@ -25,13 +25,13 @@ class Search extends Component<SearchProps, SearchState> {
     document.removeEventListener('keydown', this.onKeyDown)
   }
   onKeyDown = (e: KeyboardEvent) => {
-    console.log('enter', e.keyCode)
     if (e.keyCode === 70) {
-      // this.refs.input
       this.searchInput.current && this.searchInput.current.focus()
     }
     if (e.keyCode === 13) {
-      window.open(this.state.inputVal)
+      if (this.state.inputVal) {
+        window.open(this.state.inputVal)
+      }
     }
   }
 
