@@ -22,7 +22,7 @@ const App: React.FC = () => {
     GitLinks,
     WebpackLinks,
     CssLinks,
-    GitLinks
+    GithubLinks
   )
   return (
     <div className='App'>

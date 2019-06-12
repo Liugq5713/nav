@@ -1,33 +1,76 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export interface SearchProps {
+interface SearchProps {
   options: Array<{ value: string; label: string; title?: string }>
 }
-const Search: React.FC<SearchProps> = props => {
-  const { options } = props
-  const options_el = options.map(option => {
-    return <option value={option.value}>{option.label}</option>
-  })
-  const handleChange = (e: object) => {
-    console.log('e', e, value)
+
+interface SearchState {
+  inputVal: string
+}
+
+class Search extends Component<SearchProps, SearchState> {
+  private searchInput: React.RefObject<HTMLInputElement>
+  constructor(props: any) {
+    super(props)
+    this.state = { inputVal: '' }
+    this.searchInput = React.createRef()
   }
-  let value = ''
-  return (
-    <div>
-      <input type='text' name='city' list='cityname' />
-      <datalist id='cityname'>{options_el}</datalist>
-      {/* <select id='pet-select'>{options_el}</select>
-      <input
-        type='search'
-        id='site-search'
-        name='q'
-        value={value}
-        onChange={e => handleChange(e)}
-        aria-label='Search through site content'
-      />
-      <button className=' pure-button pure-button-primary'>搜索</button> */}
-    </div>
-  )
+
+  componentDidMount() {
+    document.addEventListener('keydown', this.onKeyDown)
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.onKeyDown)
+  }
+  onKeyDown = (e: KeyboardEvent) => {
+    console.log('enter', e.keyCode)
+    if (e.keyCode === 70) {
+      // this.refs.input
+      this.searchInput.current && this.searchInput.current.focus()
+    }
+    if (e.keyCode === 13) {
+      window.open(this.state.inputVal)
+    }
+  }
+
+  handleChange(event: any) {
+    this.setState({ inputVal: event.target.value })
+  }
+  render() {
+    const { options } = this.props
+    const { inputVal } = this.state
+    const options_el = options.map(option => {
+      return (
+        <option
+          key={option.value}
+          title={option.title}
+          value={option.value}
+          label={option.label}
+        />
+      )
+    })
+    return (
+      <div>
+        <input
+          type='text'
+          name='website'
+          list='website'
+          value={inputVal}
+          onChange={e => this.handleChange(e)}
+          ref={this.searchInput}
+          placeholder='请输入网址or网址名'
+        />
+        <datalist id='website'>{options_el}</datalist>
+        <button
+          style={{ fontSize: '70%', marginLeft: '10px' }}
+          className='pure-button pure-button-primary'
+        >
+          enter 跳转
+        </button>
+      </div>
+    )
+  }
 }
 
 export default Search
