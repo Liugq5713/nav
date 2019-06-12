@@ -36,6 +36,7 @@ const App: React.FC = () => {
           <Search options={options} />
           <ArrayLink title='阅读' links={ReadLinks} />
           <ArrayLink title='教程' links={TutorialLinks} />
+          <ArrayLink title='收集' links={BookLinks} />
         </div>
         <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
           <ArrayLink title='代码' links={CodeLinks} />
@@ -44,7 +45,6 @@ const App: React.FC = () => {
           <ArrayLink title='资源' links={SourceLinks} />
         </div>
         <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
-          <ArrayLink title='收集' links={BookLinks} />
           <ArrayLink title='Git' links={GitLinks} />
           <ArrayLink title='Webpack' links={WebpackLinks} />
           <ArrayLink title='CSS' links={CssLinks} />

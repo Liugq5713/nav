@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 export interface LinkProps {
   title: string
@@ -22,9 +23,11 @@ const ArrayLink: React.FC<LinkProps> = props => {
   })
   const { title } = props
   return (
-    <div>
-      <h2>{title}</h2>
-      <ul>{links}</ul>
+    <div className='layout'>
+      <div className='card'>
+        <h2>{title}</h2>
+        <ul>{links}</ul>
+      </div>
     </div>
   )
 }

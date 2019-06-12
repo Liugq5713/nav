@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../ArrayLink/style.css'
 
 interface SearchProps {
   options: Array<{ value: string; label: string; title?: string }>
@@ -51,12 +52,13 @@ class Search extends Component<SearchProps, SearchState> {
       )
     })
     return (
-      <div>
+      <div className='layout'>
         <input
           type='text'
           name='website'
           list='website'
           value={inputVal}
+          style={{ width: '70%' }}
           onChange={e => this.handleChange(e)}
           ref={this.searchInput}
           placeholder='请输入网址or网址名'
