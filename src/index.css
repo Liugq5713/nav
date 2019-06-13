@@ -11,3 +11,69 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ul {
+  list-style-type: none;
+}
+li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #409eff;
+}
+a:visited,
+a:link,
+a:active {
+  color: #63666b;
+}
+
+input {
+  -webkit-appearance: none;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  color: #606266;
+  display: inline-block;
+  font-size: inherit;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  padding: 0 15px;
+  transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
+}
+
+button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.el-button--primary {
+  color: #fff;
+  background-color: #409eff;
+  border-color: #409eff;
+}

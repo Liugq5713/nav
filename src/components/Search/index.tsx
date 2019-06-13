@@ -66,7 +66,7 @@ class Search extends Component<SearchProps, SearchState> {
         <datalist id='website'>{options_el}</datalist>
         <button
           style={{ fontSize: '70%', marginLeft: '10px' }}
-          className='pure-button pure-button-primary'
+          className='el-button--primary '
         >
           enter 跳转
         </button>
