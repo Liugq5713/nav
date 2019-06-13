@@ -1,39 +1,41 @@
 export const ReadLinks = [
   {
-    label: '奇舞周刊',
-    value: 'https://weekly.75team.com/',
-    title: '360出品'
+    label: "奇舞周刊",
+    value: "https://weekly.75team.com/",
+    title: "360出品"
   },
   {
-    label: '冴羽写博客',
-    value: 'https://github.com/mqyqingfeng/Blog'
+    label: "冴羽写博客",
+    value: "https://github.com/mqyqingfeng/Blog"
   },
   {
-    label: '阮一峰',
-    value: 'http://www.ruanyifeng.com/blog/'
+    label: "阮一峰",
+    value: "http://www.ruanyifeng.com/blog/"
   },
   {
-    label: 'Medium',
-    value: 'https://medium.com/'
+    label: "Medium",
+    value: "https://medium.com/"
   },
   {
-    label: '张鑫旭',
-    value: 'https://www.zhangxinxu.com/wordpress/category/js/'
+    label: "张鑫旭",
+    value: "https://www.zhangxinxu.com/wordpress/category/js/"
   },
   {
-    label: '人人都是产品经理',
-    value: 'http://www.woshipm.com/'
+    label: "人人都是产品经理",
+    value: "http://www.woshipm.com/"
   },
   {
-    label: '王垠的博客',
-    value: 'http://www.yinwang.org/'
+    label: "王垠的博客",
+    value: "http://www.yinwang.org/"
   },
   {
-    label: 'Infoq',
-    value: 'https://www.infoq.cn/'
+    label: "Infoq",
+    value: "https://www.infoq.cn/"
   },
   {
-    label: 'overreact',
-    value: 'https://overreacted.io/'
+    label: "overreact",
+    value: "https://overreacted.io/"
   }
-]
+];
+
+export const BookLinks = [];
