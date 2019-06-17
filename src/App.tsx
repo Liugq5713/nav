@@ -11,7 +11,7 @@ import {
   GitLinks,
   WebpackLinks,
   CssLinks,
-  GithubLinks,
+  GithubRepoLinks,
   CommunityLinks
 } from './data/links/book'
 // import { SelfLinks } from './data/links/self'
@@ -19,7 +19,8 @@ import {
   CodeLinks,
   FileLinks,
   ImageLinks,
-  SourceLinks
+  SourceLinks,
+  GithubLinks
 } from './data/links/tool'
 const App: React.FC = () => {
   const options = ReadLinks.concat(
@@ -28,12 +29,13 @@ const App: React.FC = () => {
     GitLinks,
     WebpackLinks,
     CssLinks,
-    GithubLinks,
+    GithubRepoLinks,
     CommunityLinks,
     CodeLinks,
     FileLinks,
     ImageLinks,
-    SourceLinks
+    SourceLinks,
+    GithubLinks
   )
   return (
     <div>
@@ -57,7 +59,8 @@ const App: React.FC = () => {
             <ArrayLink title='Git' links={GitLinks} />
             <ArrayLink title='Webpack' links={WebpackLinks} />
             <ArrayLink title='CSS' links={CssLinks} />
-            <ArrayLink title='Github' links={GithubLinks} />
+            <ArrayLink title='Github仓库' links={GithubRepoLinks} />
+            <ArrayLink title='Github相关' links={GithubLinks} />
           </div>
         </div>
       </div>

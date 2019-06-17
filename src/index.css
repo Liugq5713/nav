@@ -11,6 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h2 {
+  color: #58595d;
+}
 ul {
   list-style-type: none;
 }
@@ -24,11 +28,12 @@ a {
 
 li a:hover {
   color: #409eff;
+  font-weight: 500;
 }
 a:visited,
 a:link,
 a:active {
-  color: #63666b;
+  color: #565758;
 }
 
 input {

@@ -34,7 +34,11 @@ class Search extends Component<SearchProps, SearchState> {
       }
     }
   }
-
+  handleClick = () => {
+    if (this.state.inputVal) {
+      window.open(this.state.inputVal)
+    }
+  }
   handleChange(event: any) {
     this.setState({ inputVal: event.target.value })
   }
@@ -66,7 +70,8 @@ class Search extends Component<SearchProps, SearchState> {
         <datalist id='website'>{options_el}</datalist>
         <button
           style={{ fontSize: '70%', marginLeft: '10px' }}
-          className='el-button--primary '
+          className='el-button--primary'
+          onClick={this.handleClick}
         >
           enter 跳转
         </button>

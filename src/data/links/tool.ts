@@ -102,3 +102,16 @@ export const SourceLinks = [
     value: 'https://undraw.co/illustrations'
   }
 ]
+
+export const GithubLinks = [
+  {
+    label: 'github-corners',
+    value: 'http://tholman.com/github-corners/',
+    title: '放在开源项目上的角标'
+  },
+  {
+    label: '2008-12-19-github-ribbons',
+    value: 'https://github.blog/2008-12-19-github-ribbons/',
+    title: '放在开源项目上的角标'
+  }
+]
