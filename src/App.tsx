@@ -1,14 +1,16 @@
-import React from 'react'
+import React,{ useState } from 'react'
+
 import './App.css'
 import ArrayLink from '../src/components/ArrayLink'
 import GithubCorner from '../src/components/GithubCorner'
 import Search from '../src/components/Search'
 import Footer from '../src/components/Footer'
-import NavBar from '../src/components/NavBar'
+import SideBar from '../src/components/SideBar'
 import * as Read from './data/links/read'
 import * as Tool from './data/links/tool'
 const App: React.FC = () => {
-  console.log('Read', typeof Read)
+
+  const [category, setCategory] = useState('all');
   interface OptionValue {
     label: string
     value: string
@@ -23,15 +25,17 @@ const App: React.FC = () => {
   for (let link in Links) {
     options = options.concat(Links[link])
   }
+
+  const Cateogries = Object.keys(Links)
   return (
     <div>
       <GithubCorner />
       <div className='App'>
         <div className='pure-g'>
           <div className='pure-u-1 pure-u-md-1-4'>
-            <NavBar>
+            <SideBar setCategory={setCategory} cateogries={Cateogries}>
               <Search options={options} />
-            </NavBar>
+            </SideBar>
           </div>
           <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-4 pure-u-xl-1-4'>
             <ArrayLink title='阅读' links={Read.ReadLinks} />
