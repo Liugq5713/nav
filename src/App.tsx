@@ -4,63 +4,53 @@ import ArrayLink from '../src/components/ArrayLink'
 import GithubCorner from '../src/components/GithubCorner'
 import Search from '../src/components/Search'
 import Footer from '../src/components/Footer'
-import { ReadLinks } from './data/links/read'
-import { TutorialLinks } from './data/links/tutorial'
-import {
-  BookLinks,
-  GitLinks,
-  WebpackLinks,
-  CssLinks,
-  GithubRepoLinks,
-  CommunityLinks
-} from './data/links/book'
-// import { SelfLinks } from './data/links/self'
-import {
-  CodeLinks,
-  FileLinks,
-  ImageLinks,
-  SourceLinks,
-  GithubLinks
-} from './data/links/tool'
+import NavBar from '../src/components/NavBar'
+import * as Read from './data/links/read'
+import * as Tool from './data/links/tool'
 const App: React.FC = () => {
-  const options = ReadLinks.concat(
-    TutorialLinks,
-    BookLinks,
-    GitLinks,
-    WebpackLinks,
-    CssLinks,
-    GithubRepoLinks,
-    CommunityLinks,
-    CodeLinks,
-    FileLinks,
-    ImageLinks,
-    SourceLinks,
-    GithubLinks
-  )
+  console.log('Read', typeof Read)
+  interface OptionValue {
+    label: string
+    value: string
+    title?: string
+  }
+
+  let options: Array<OptionValue> = []
+  interface OptionsValue {
+    [key: string]: Array<OptionValue>
+  }
+  const Links: OptionsValue = { ...Read, ...Tool }
+  for (let link in Links) {
+    options = options.concat(Links[link])
+  }
   return (
     <div>
       <GithubCorner />
       <div className='App'>
         <div className='pure-g'>
-          <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
-            <Search options={options} />
-            <ArrayLink title='阅读' links={ReadLinks} />
-            <ArrayLink title='社区' links={CommunityLinks} />
-            <ArrayLink title='教程' links={TutorialLinks} />
-            <ArrayLink title='收集' links={BookLinks} />
+          <div className='pure-u-1 pure-u-md-1-4'>
+            <NavBar>
+              <Search options={options} />
+            </NavBar>
           </div>
-          <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
-            <ArrayLink title='代码' links={CodeLinks} />
-            <ArrayLink title='文件处理' links={FileLinks} />
-            <ArrayLink title='图片处理' links={ImageLinks} />
-            <ArrayLink title='资源' links={SourceLinks} />
+          <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-4 pure-u-xl-1-4'>
+            <ArrayLink title='阅读' links={Read.ReadLinks} />
+            <ArrayLink title='社区' links={Read.WebpackLinks} />
+            <ArrayLink title='教程' links={Read.TutorialLinks} />
+            <ArrayLink title='收集' links={Read.BookLinks} />
           </div>
-          <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-3 pure-u-xl-1-3'>
-            <ArrayLink title='Git' links={GitLinks} />
-            <ArrayLink title='Webpack' links={WebpackLinks} />
-            <ArrayLink title='CSS' links={CssLinks} />
-            <ArrayLink title='Github仓库' links={GithubRepoLinks} />
-            <ArrayLink title='Github相关' links={GithubLinks} />
+          <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-4 pure-u-xl-1-4'>
+            <ArrayLink title='代码' links={Tool.CodeLinks} />
+            <ArrayLink title='文件处理' links={Tool.FileLinks} />
+            <ArrayLink title='图片处理' links={Tool.ImageLinks} />
+            <ArrayLink title='资源' links={Tool.SourceLinks} />
+          </div>
+          <div className='pure-u-1  pure-u-sm-1-2 pure-u-md-1-4 pure-u-xl-1-4'>
+            <ArrayLink title='Git' links={Read.GitLinks} />
+            <ArrayLink title='Webpack' links={Read.WebpackLinks} />
+            <ArrayLink title='CSS' links={Read.CssLinks} />
+            <ArrayLink title='Github仓库' links={Read.GithubRepoLinks} />
+            <ArrayLink title='Github相关' links={Tool.GithubLinks} />
           </div>
         </div>
       </div>
