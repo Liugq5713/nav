@@ -29,7 +29,7 @@ a {
 
 li a:hover {
   color: #409eff;
-  font-weight: 600;
+  text-shadow: 0 0 0.45px rgb(149, 148, 148), 0 0 0.45px rgb(155, 154, 154);
 }
 a:visited,
 a:link,
