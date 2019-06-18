@@ -176,3 +176,18 @@ export const Github = [
     title: '放在开源项目上的角标'
   }
 ]
+
+export const OtherNav = [
+  {
+    label: '大前端网址导航',
+    value: 'http://www.daqianduan.com/nav'
+  },
+  {
+    label: 'pfan123 导航',
+    value: 'https://docs.pfan123.com/'
+  },
+  {
+    label: '前端开发网址导航',
+    value: 'http://nav.web-hub.cn/'
+  }
+]
