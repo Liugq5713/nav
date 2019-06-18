@@ -51,22 +51,6 @@ export const Read: Array<OptionValue> = [
   }
 ]
 
-export const Book: Array<OptionValue> = [
-  {
-    label: '编程中文书籍索引',
-    value: 'https://github.com/justjavac/free-programming-books-zh_CN'
-  },
-  {
-    label: 'Linux 命令行',
-    value: 'http://billie66.github.io/TLCL/book/'
-  },
-
-  {
-    label: '中文排版指北',
-    value: 'https://github.com/sparanoid/chinese-copywriting-guidelines'
-  }
-]
-
 export const JavaScript: Array<OptionValue> = [
   {
     label: '30-seconds-of-code',
@@ -383,5 +367,21 @@ export const Tutorial: Array<OptionValue> = [
   {
     label: '前端面试图谱',
     value: 'https://yuchengkai.cn/docs/frontend/'
+  }
+]
+
+export const Book: Array<OptionValue> = [
+  {
+    label: '编程中文书籍索引',
+    value: 'https://github.com/justjavac/free-programming-books-zh_CN'
+  },
+  {
+    label: 'Linux 命令行',
+    value: 'http://billie66.github.io/TLCL/book/'
+  },
+
+  {
+    label: '中文排版指北',
+    value: 'https://github.com/sparanoid/chinese-copywriting-guidelines'
   }
 ]
