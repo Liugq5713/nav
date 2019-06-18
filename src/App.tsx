@@ -31,7 +31,7 @@ const App: React.FC = () => {
   return (
     <div>
       <GithubCorner />
-      <div className='App ' id='layout'>
+      <div className='App' id='layout'>
         <div id='menu'>
           <SideBar cateogries={Cateogries}>
             <Search options={options} />
