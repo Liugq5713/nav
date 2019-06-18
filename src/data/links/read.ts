@@ -106,6 +106,14 @@ export const Css: Array<OptionValue> = [
     label: 'css渐变预览及代码生成',
     value: 'https://www.html.cn/tool/css3Preview/Box-Shadow.html'
   },
+      {
+        "label":"LoadersCSS",
+        "value":"https://connoratherton.com/loaders",
+        "title":"用 CSS 技术实现 loading 动画； 补一句，想熟悉、理解 `keyframes、animation、transform、transition`的童鞋可以直接去读其源码(只有千把行代码)，读完就算出师鸟:)",
+        "tags":[
+            "CSS"
+        ]
+    },
   {
     label: 'css动画缓动函数预览及生成',
     value: 'http://xuanfengge.com/easeing/ceaser/'
