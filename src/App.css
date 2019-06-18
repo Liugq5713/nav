@@ -1,4 +1,6 @@
 .App {
+  padding:0;
+  margin:0;
   background: #d3cce3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -10,4 +12,20 @@
     #e9e4f0,
     #d3cce3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#layout{   
+   padding-left: 300px;
+  position: relative;
+}
+
+#menu {
+  margin-left: -300px;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: #191818;
+  overflow-y: auto;
 }

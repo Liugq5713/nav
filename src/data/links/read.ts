@@ -4,7 +4,7 @@ interface OptionValue {
   title?: string
 }
 
-export const TutorialLinks: Array<OptionValue> = [
+export const Tutorial: Array<OptionValue> = [
   {
     label: 'Linux',
     value: 'https://www.digitalocean.com/community'
@@ -43,7 +43,7 @@ export const TutorialLinks: Array<OptionValue> = [
   }
 ]
 
-export const ReadLinks: Array<OptionValue> = [
+export const Read: Array<OptionValue> = [
   {
     label: '奇舞周刊',
     value: 'https://weekly.75team.com/',
@@ -83,7 +83,7 @@ export const ReadLinks: Array<OptionValue> = [
   }
 ]
 
-export const BookLinks: Array<OptionValue> = [
+export const Book: Array<OptionValue> = [
   {
     label: '编程中文书籍索引',
     value: 'https://github.com/justjavac/free-programming-books-zh_CN'
@@ -108,7 +108,7 @@ export const BookLinks: Array<OptionValue> = [
   }
 ]
 
-export const GitLinks: Array<OptionValue> = [
+export const Git: Array<OptionValue> = [
   {
     label: '聊聊 Git 「改变历史」',
     value: 'https://zhuanlan.zhihu.com/p/29497618'
@@ -127,7 +127,7 @@ export const GitLinks: Array<OptionValue> = [
   }
 ]
 
-export const WebpackLinks: Array<OptionValue> = [
+export const Webpack: Array<OptionValue> = [
   {
     label: '深入浅出 Webpack',
     value: 'http://webpack.wuhaolin.cn/'
@@ -142,7 +142,7 @@ export const WebpackLinks: Array<OptionValue> = [
   }
 ]
 
-export const CssLinks: Array<OptionValue> = [
+export const Css: Array<OptionValue> = [
   {
     label: 'css渐变预览及代码生成',
     value: 'https://www.html.cn/tool/css3Preview/Box-Shadow.html'
@@ -157,16 +157,16 @@ export const CssLinks: Array<OptionValue> = [
   }
 ]
 
-export const onlineEditLinks: Array<OptionValue> = []
+export const onlineEdit: Array<OptionValue> = []
 
-export const interviewLinks: Array<OptionValue> = [
+export const interview: Array<OptionValue> = [
   {
     label: '前端面试问题',
     value: 'https://github.com/h5bp/Front-end-Developer-Interview-Questions'
   }
 ]
 
-export const GithubRepoLinks: Array<OptionValue> = [
+export const GithubRepo: Array<OptionValue> = [
   {
     label: '30-seconds-of-code',
     value: 'https://github.com/30-seconds/30-seconds-of-code',
@@ -194,7 +194,7 @@ export const GithubRepoLinks: Array<OptionValue> = [
   }
 ]
 
-export const CommunityLinks: Array<OptionValue> = [
+export const Community: Array<OptionValue> = [
   {
     label: '掘金',
     value: 'https://juejin.im/timeline'
