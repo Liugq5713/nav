@@ -156,9 +156,18 @@ export const Css: Array<OptionValue> = [
   }
 ]
 
-export const onlineEdit: Array<OptionValue> = []
+export const OnlineEdit: Array<OptionValue> = [
+  {
+    label: 'jsBin',
+    value: 'http://jsbin.com/'
+  },
+  {
+    label: 'jsFiddle',
+    value: 'https://jsfiddle.net/'
+  }
+]
 
-export const interview: Array<OptionValue> = [
+export const Interview: Array<OptionValue> = [
   {
     label: '前端面试问题',
     value: 'https://github.com/h5bp/Front-end-Developer-Interview-Questions'

@@ -12,14 +12,6 @@ export const Code = [
     value: 'https://lab.lyric.im/wxformat/'
   },
   {
-    label: 'jsBin',
-    value: 'http://jsbin.com/'
-  },
-  {
-    label: 'jsFiddle',
-    value: 'https://jsfiddle.net/'
-  },
-  {
     label: '测试 JS 性能',
     value: 'https://www.measurethat.net/Benchmarks'
   },
