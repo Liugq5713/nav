@@ -1,14 +1,37 @@
 .App {
-  padding: 10px 30px;
-  background: #d3cce3; /* fallback for old browsers */
+  padding: 0;
+  margin: 0;
+  background: #8e9eab; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    #e9e4f0,
-    #d3cce3
+    to bottom,
+    #eef2f3,
+    #8e9eab
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #e9e4f0,
-    #d3cce3
+    to bottom,
+    #eef2f3,
+    #8e9eab
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#layout {
+  padding-left: 300px;
+  position: relative;
+}
+
+#menu {
+  margin-left: -300px;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: #191818;
+  overflow-y: auto;
+}
+#main {
+  padding: 10px;
+  overflow: hidden;
 }

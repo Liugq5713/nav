@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../ArrayLink/style.css'
 
 interface SearchProps {
   options: Array<{ value: string; label: string; title?: string }>
@@ -56,7 +55,7 @@ class Search extends Component<SearchProps, SearchState> {
       )
     })
     return (
-      <div className='layout'>
+      <div style={{ padding: '5px' }}>
         <input
           type='text'
           name='website'
@@ -73,7 +72,7 @@ class Search extends Component<SearchProps, SearchState> {
           className='el-button--primary'
           onClick={this.handleClick}
         >
-          enter 跳转
+          跳转
         </button>
       </div>
     )

@@ -9,7 +9,7 @@ export interface LinkProps {
 const ArrayLink: React.FC<LinkProps> = props => {
   const links = props.links.map(link => {
     return (
-      <li key={link.value}>
+      <li key={link.value} className='card link-item'>
         <a
           href={link.value}
           title={link.title}
@@ -24,9 +24,9 @@ const ArrayLink: React.FC<LinkProps> = props => {
   const { title } = props
   return (
     <div className='layout'>
-      <div className='card'>
-        <h2>{title}</h2>
-        <ul>{links}</ul>
+      <div>
+        <h2 id={title}>{title}</h2>
+        <ul className='links'>{links}</ul>
       </div>
     </div>
   )

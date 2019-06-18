@@ -1,13 +1,21 @@
 .layout {
-  padding: 20px;
-  margin: 10px;
-  border-radius: 4px;
+  padding: 3px 10px;
+  margin: 3px 10px;
+  letter-spacing: 0px;
+}
+.card {
+  border-radius: 5px;
   border: 1px solid #ebeef5;
   background-color: #fff;
   overflow: hidden;
   color: #303133;
   transition: 0.3s;
 }
-
-.card {
+.links {
+  width: 100%;
+}
+.link-item {
+  padding: 10px 10px;
+  margin: 5px 8px;
+  display: inline-block;
 }

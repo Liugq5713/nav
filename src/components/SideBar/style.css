@@ -1,0 +1,13 @@
+.color-white {
+  color: #fff;
+  width: 100px;
+  line-height: 16px;
+  word-spacing: 20px;
+  letter-spacing: 0px;
+}
+
+.pure-menu-active > .pure-menu-link,
+.pure-menu-link:focus,
+.pure-menu-link:hover {
+  background-color: #409eff;
+}
