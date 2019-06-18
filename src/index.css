@@ -47,8 +47,8 @@ input {
   color: #606266;
   display: inline-block;
   font-size: inherit;
-  height: 40px;
-  line-height: 40px;
+  height: 36px;
+  line-height: 36px;
   outline: none;
   padding: 0 15px;
   transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -73,7 +73,7 @@ button {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  padding: 12px 16px;
+  padding: 11px 16px;
   font-size: 14px;
   border-radius: 4px;
 }

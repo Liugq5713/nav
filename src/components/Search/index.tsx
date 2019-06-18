@@ -55,7 +55,7 @@ class Search extends Component<SearchProps, SearchState> {
       )
     })
     return (
-      <div style={{ padding: '5px' }}>
+      <div style={{ padding: '10px 5px' }}>
         <input
           type='text'
           name='website'
@@ -68,7 +68,7 @@ class Search extends Component<SearchProps, SearchState> {
         />
         <datalist id='website'>{options_el}</datalist>
         <button
-          style={{ fontSize: '70%', marginLeft: '10px' }}
+          style={{ fontSize: '70%', marginLeft: '10px', marginTop: '-20px' }}
           className='el-button--primary'
           onClick={this.handleClick}
         >
