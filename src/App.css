@@ -33,4 +33,5 @@
 }
 #main {
   padding: 10px;
+  overflow: hidden;
 }

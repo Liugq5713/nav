@@ -40,8 +40,8 @@ const App: React.FC = () => {
           </div>
           <div id='main'>{links_el}</div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   )
 }
