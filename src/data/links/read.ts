@@ -122,33 +122,33 @@ export const Css: Array<OptionValue> = [
     tags: ['CSS']
   },
   {
-    label: 'Bootstrap',
+    label: 'Bootstrap库',
     value: 'http://getbootstrap.com/',
     title:
       'Bootstrap是快速开发Web应用程序的前端工具包，它是一个CSS和HTML的集合，它使用了最新的浏览器技术，给你的Web开发提供了时尚的版式',
     tags: ['UI框架']
   },
   {
-    label: 'bulma',
+    label: 'bulma库',
     value: 'http://bulma.io/',
     title: 'A modern CSS framework based on Flexbox',
     tags: ['css']
   },
   {
-    label: 'pure',
+    label: 'pure库',
     value: 'http://purecss.io/',
     title:
       'Pure是来自雅虎的CSS框架，框架基于响应式设计，提供多种样式的组件，包括表格、表单、按钮、表、导航等',
     tags: ['UI框架']
   },
   {
-    label: 'MetroUI',
+    label: 'MetroUI库',
     value: 'http://metroui.org.ua/',
     title: 'MetroUI CSS 是一套实现了Windows8 Metro风格界面的CSS框架',
     tags: ['UI框架']
   },
   {
-    label: 'Maxmertkit',
+    label: 'Maxmertkit库',
     value: 'http://www.maxmert.com/',
     title:
       'Maxmertkit是一个全新的前端框架，拥有类似boostrap的UI但是提供了不同的组件内容',
