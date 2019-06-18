@@ -1,4 +1,4 @@
-export const CodeLinks = [
+export const Code = [
   {
     label: 'JSON 美化',
     value: 'https://www.json.cn/'
@@ -29,13 +29,13 @@ export const CodeLinks = [
   }
 ]
 
-export const FileLinks = [
+export const File = [
   {
     label: 'PDF 处理',
     value: 'https://www.ilovepdf.com/'
   }
 ]
-export const ImageLinks = [
+export const Image = [
   {
     label: '生成代码图片',
     value: 'https://carbon.now.sh/'
@@ -78,7 +78,7 @@ export const ImageLinks = [
   }
 ]
 
-export const SourceLinks = [
+export const Source = [
   {
     label: '渐变色网站',
     value: 'https://uigradients.com/#Wiretap'
@@ -103,7 +103,7 @@ export const SourceLinks = [
   }
 ]
 
-export const GithubLinks = [
+export const Github = [
   {
     label: 'github-corners',
     value: 'http://tholman.com/github-corners/',

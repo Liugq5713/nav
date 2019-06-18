@@ -25,7 +25,7 @@ const ArrayLink: React.FC<LinkProps> = props => {
   return (
     <div className='layout'>
       <div>
-        <h2>{title}</h2>
+        <h2 id={title}>{title}</h2>
         <ul className='links'>{links}</ul>
       </div>
     </div>

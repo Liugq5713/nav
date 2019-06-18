@@ -6,7 +6,6 @@ interface SearchFunc {
 export interface PropType {
   cateogries: Array<string>
   children?: ReactNode
-  setCategory: SearchFunc
 }
 
 const SideBar: React.FC<PropType> = props => {
@@ -17,7 +16,6 @@ const SideBar: React.FC<PropType> = props => {
       <li
         className='pure-menu-item'
         value={item}
-        onClick={() => props.setCategory(item)}
         key={item}
       >
         <a href={`#${item}`}  className="pure-menu-link ">
