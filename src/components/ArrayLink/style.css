@@ -3,16 +3,38 @@
   margin: 3px 10px;
   letter-spacing: 0px;
 }
+
+.link-wrapper {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  border-radius: 2px;
+}
+.link-title {
+  color: #409eff;
+}
 .card {
   border-radius: 5px;
   border: 1px solid #ebeef5;
-  background-color: #fff;
+  background: #ecf5ff;
+  border-color: #b3d8ff;
   overflow: hidden;
-  color: #303133;
+  color: #1c1c1d;
   transition: 0.3s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 5px;
 }
 .links {
   width: 100%;
+  margin: 0;
 }
 .link-item {
   padding: 10px 10px;

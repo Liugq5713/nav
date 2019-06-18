@@ -32,16 +32,14 @@ const App: React.FC = () => {
     <div>
       <GithubCorner />
       <div className='App ' id='layout'>
-        <div className='pure-g'>
-          <div id='menu'>
-            <SideBar cateogries={Cateogries}>
-              <Search options={options} />
-            </SideBar>
-          </div>
-          <div id='main'>{links_el}</div>
+        <div id='menu'>
+          <SideBar cateogries={Cateogries}>
+            <Search options={options} />
+          </SideBar>
         </div>
-        <Footer />
+        <div id='main'>{links_el}</div>
       </div>
+      <Footer />
     </div>
   )
 }

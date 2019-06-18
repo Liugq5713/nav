@@ -23,9 +23,11 @@ const ArrayLink: React.FC<LinkProps> = props => {
   })
   const { title } = props
   return (
-    <div className='layout'>
+    <div className='link-wrapper layout'>
       <div>
-        <h2 id={title}>{title}</h2>
+        <h2 className='link-title' id={title}>
+          {title}
+        </h2>
         <ul className='links'>{links}</ul>
       </div>
     </div>
