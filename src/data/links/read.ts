@@ -162,6 +162,12 @@ export const Css: Array<OptionValue> = [
     tags: ['UI框架']
   },
   {
+    label: 'uix-kit库',
+    value: 'https://github.com/xizon/uix-kit',
+    title: '兼容 Bootstrap 的快速建站 HTML5 套件',
+    tags: ['UI框架']
+  },
+  {
     label: 'Semantic UI',
     value: 'http://semantic-ui.com/',
     title: '语义化设计的前端框架，为攻城师而制作的可复用的开源前端框架',
