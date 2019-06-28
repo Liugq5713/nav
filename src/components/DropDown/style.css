@@ -1,0 +1,13 @@
+.dd-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dd-items {
+  color: #000;
+}

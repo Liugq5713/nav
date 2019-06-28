@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react'
 import dinodr from './dinodr.gif'
+import DropDown from '../DropDown'
+
 import './style.css'
 interface SearchFunc {
   (source: string): void
@@ -28,7 +30,9 @@ const SideBar: React.FC<PropType> = props => {
       </div>
       <div className='header'>{props.children}</div>
       <div className='content'>
-        <ul className='pure-menu-list'>{cateogry_list}</ul>
+        <ul className='pure-menu-list'>
+          <DropDown>{cateogry_list}</DropDown>
+        </ul>
       </div>
     </div>
   )
