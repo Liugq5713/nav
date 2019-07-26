@@ -24,7 +24,12 @@ export const Code = [
   {
     label: '算法可视化',
     value: 'https://visualgo.net/en'
-  }
+  },
+  {
+    label: '在线工具',
+    value: 'https://www.toolfk.com/',
+    title:'专供程序员使用的一些在线工具'
+  },
 ]
 
 export const File = [
