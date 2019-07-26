@@ -40,6 +40,9 @@ class Search extends Component<SearchProps, SearchState> {
   }
   handleChange(event: any) {
     this.setState({ inputVal: event.target.value })
+    if(event.target.value){
+      window.open(event.target.value ,'_blank ')
+    }
   }
   render() {
     const { options } = this.props
@@ -61,19 +64,12 @@ class Search extends Component<SearchProps, SearchState> {
           name='website'
           list='website'
           value={inputVal}
-          style={{ width: '70%' }}
+          style={{ width: '100%' }}
           onChange={e => this.handleChange(e)}
           ref={this.searchInput}
           placeholder='请输入网址or网址名'
         />
         <datalist id='website'>{options_el}</datalist>
-        <button
-          style={{ fontSize: '70%', marginLeft: '10px', marginTop: '-20px' }}
-          className='el-button--primary'
-          onClick={this.handleClick}
-        >
-          跳转
-        </button>
       </div>
     )
   }

@@ -25,9 +25,9 @@ const SideBar: React.FC<PropType> = props => {
   })
   return (
     <div className='sidebar'>
-      <div className='logo'>
-        <img width='100%' src={dinodr} alt='logo' />
-      </div>
+      {/* <div className='logo'>
+        <img width='50%' src={dinodr} alt='logo' />
+      </div> */}
       <div className='header'>{props.children}</div>
       <div className='content'>
         <ul className='pure-menu-list'>
