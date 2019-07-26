@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import dinodr from './dinodr.gif'
+// import dinodr from './dinodr.gif'
 import './style.css'
 interface SearchFunc {
   (source: string): void
