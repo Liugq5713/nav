@@ -33,15 +33,11 @@ class Search extends Component<SearchProps, SearchState> {
       }
     }
   }
-  handleClick = () => {
-    if (this.state.inputVal) {
-      window.open(this.state.inputVal)
-    }
-  }
+
   handleChange(event: any) {
     this.setState({ inputVal: event.target.value })
-    if(event.target.value){
-      window.open(event.target.value ,'_blank ')
+    if(event.target.value&&event.target.value.includes('https://')){
+      window.open(event.target.value ,'_blank')
     }
   }
   render() {
@@ -69,7 +65,7 @@ class Search extends Component<SearchProps, SearchState> {
           ref={this.searchInput}
           placeholder='请输入网址or网址名'
         />
-        <datalist id='website'>{options_el}</datalist>
+        <datalist     id='website'>{options_el}</datalist>
       </div>
     )
   }
