@@ -38,6 +38,7 @@ const App: React.FC = () => {
           </SideBar>
         </div>
         <div id="main">{links_el}</div>
+        s
         <Footer />
       </div>
     </div>
