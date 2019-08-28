@@ -1,42 +1,42 @@
-import React from "react";
+import React from 'react'
 
-import "./App.css";
-import ArrayLink from "../src/components/ArrayLink";
-import GithubCorner from "../src/components/GithubCorner";
-import Search from "../src/components/Search";
-import Footer from "../src/components/Footer";
-import SideBar from "../src/components/SideBar";
-import * as Read from "./data/links/read";
-import * as Tool from "./data/links/tool";
+import './App.css'
+import ArrayLink from '../src/components/ArrayLink'
+import GithubCorner from '../src/components/GithubCorner'
+import Search from '../src/components/Search'
+import Footer from '../src/components/Footer'
+import SideBar from '../src/components/SideBar'
+import * as Read from './data/links/read'
+import * as Tool from './data/links/tool'
 const App: React.FC = () => {
   interface OptionValue {
-    label: string;
-    value: string;
-    title?: string;
+    label: string
+    value: string
+    title?: string
   }
   interface OptionsValue {
-    [key: string]: Array<OptionValue>;
+    [key: string]: Array<OptionValue>
   }
-  const Links: OptionsValue = { ...Read, ...Tool };
+  const Links: OptionsValue = { ...Read, ...Tool }
   let links_el = Object.keys(Links).map(name => {
-    return <ArrayLink key={name} title={name} links={Links[name]} />;
-  });
+    return <ArrayLink key={name} title={name} links={Links[name]} />
+  })
 
-  let options: Array<OptionValue> = [];
+  let options: Array<OptionValue> = []
   for (let link in Links) {
-    options = options.concat(Links[link]);
+    options = options.concat(Links[link])
   }
 
-  const Cateogries = Object.keys(Links);
+  const Cateogries = Object.keys(Links)
   return (
     <div>
       <GithubCorner />
       <div className="App" id="layout">
-        <div id="menu">
+        {/* <div id="menu">
           <SideBar cateogries={Cateogries}></SideBar>
-        </div>
+        </div> */}
         <div id="main">
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: 'center' }}>
             <Search options={options} />
           </div>
           <div>{links_el}</div>
@@ -44,7 +44,7 @@ const App: React.FC = () => {
         <Footer />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

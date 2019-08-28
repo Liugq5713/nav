@@ -4,13 +4,13 @@
 }
 
 #layout {
-  padding-left: 300px;
+  /* padding-left: 200px; */
   position: relative;
 }
 
 #menu {
-  margin-left: -300px;
-  width: 300px;
+  margin-left: -200px;
+  width: 200px;
   position: fixed;
   top: 0;
   bottom: 0;
