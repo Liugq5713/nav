@@ -33,11 +33,14 @@ const App: React.FC = () => {
       <GithubCorner />
       <div className="App" id="layout">
         <div id="menu">
-          <SideBar cateogries={Cateogries}>
-            <Search options={options} />
-          </SideBar>
+          <SideBar cateogries={Cateogries}></SideBar>
         </div>
-        <div id="main">{links_el}</div>
+        <div id="main">
+          <div style={{ textAlign: "center" }}>
+            <Search options={options} />
+          </div>
+          <div>{links_el}</div>
+        </div>
         <Footer />
       </div>
     </div>
