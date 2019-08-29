@@ -52,7 +52,7 @@ class Search extends Component<SearchProps, SearchState> {
         <div className="search--logo">
           <img width="100px" src={pig} alt="logo" />
         </div>
-        <h2>不要忘记别人还在奔跑</h2>
+        <h2>不要忘记别人还在奔跑( ⊙ o ⊙ )！</h2>
         <input
           type="text"
           name="website"
