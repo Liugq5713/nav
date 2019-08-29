@@ -31,7 +31,7 @@
 }
 
 .link-wrapper__title::after {
-  content: ' ';
+  content: " ";
   display: block;
   position: absolute;
   top: 32px;
@@ -63,4 +63,8 @@ ul {
   padding: 10px 10px;
   margin: 5px 8px;
   display: inline-block;
+}
+
+.link-item a {
+  color: #515151;
 }
