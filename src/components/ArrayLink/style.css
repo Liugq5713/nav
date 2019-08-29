@@ -8,6 +8,7 @@
   position: relative;
   margin: 0.5rem 15px 1rem 20px;
   background-color: #fff;
+  border: 1px solid #c6d7e0;
   -webkit-transition: -webkit-box-shadow 0.25s;
   transition: -webkit-box-shadow 0.25s;
   transition: box-shadow 0.25s;

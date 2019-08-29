@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react"
 
-import './App.css'
-import ArrayLink from '../src/components/ArrayLink'
-import GithubCorner from '../src/components/GithubCorner'
-import Search from '../src/components/Search'
-import Footer from '../src/components/Footer'
-import SideBar from '../src/components/SideBar'
-import * as Read from './data/links/read'
-import * as Tool from './data/links/tool'
+import "./App.css"
+import ArrayLink from "../src/components/ArrayLink"
+import GithubCorner from "../src/components/GithubCorner"
+import Header from "../src/components/Header"
+import Search from "../src/components/Search"
+import Footer from "../src/components/Footer"
+// import SideBar from "../src/components/SideBar"
+import * as Read from "./data/links/read"
+import * as Tool from "./data/links/tool"
 const App: React.FC = () => {
   interface OptionValue {
     label: string
@@ -27,7 +28,7 @@ const App: React.FC = () => {
     options = options.concat(Links[link])
   }
 
-  const Cateogries = Object.keys(Links)
+  // const Cateogries = Object.keys(Links)
   return (
     <div>
       <GithubCorner />
@@ -35,8 +36,9 @@ const App: React.FC = () => {
         {/* <div id="menu">
           <SideBar cateogries={Cateogries}></SideBar>
         </div> */}
+        <Header />
         <div id="main">
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: "center" }}>
             <Search options={options} />
           </div>
           <div>{links_el}</div>
