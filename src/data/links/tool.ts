@@ -28,8 +28,8 @@ export const Code = [
   {
     label: '程序员在线工具',
     value: 'https://www.toolfk.com/',
-    title:'专供程序员使用的一些在线工具'
-  },
+    title: '专供程序员使用的一些在线工具'
+  }
 ]
 
 export const File = [
@@ -46,8 +46,7 @@ export const Image = [
   {
     label: 'Iconfont-阿里巴巴矢量图标库',
     value: 'http://iconfont.cn/',
-    title:
-      'Iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。阿里巴巴体验团队倾力打造，设计和前端开发的便捷工具',
+    title: 'Iconfont-国内功能很强大且图标内容很丰富的矢量图标库，提供矢量图标下载、在线存储、格式转换等功能。阿里巴巴体验团队倾力打造，设计和前端开发的便捷工具',
     tags: ['图标']
   },
   {
@@ -95,22 +94,19 @@ export const Lib = [
   {
     label: 'JSLite',
     value: 'http://jslite.io/API/',
-    title:
-      '与jQuery有着类似的api，让web开发更迅速，下载执行更快、量级更轻，针对现代高级浏览器的JavaScript库。',
+    title: '与jQuery有着类似的api，让web开发更迅速，下载执行更快、量级更轻，针对现代高级浏览器的JavaScript库。',
     tags: ['工具', '官网', '手册']
   },
   {
     label: 'Mocha',
     value: 'http://mochajs.org',
-    title:
-      'mocha 是一个简单、灵活有趣的 JavaScript 测试框架,用于 Node.js 和浏览器上的 JavaScript 应用测试。',
+    title: 'mocha 是一个简单、灵活有趣的 JavaScript 测试框架,用于 Node.js 和浏览器上的 JavaScript 应用测试。',
     tags: ['工具', '测试']
   },
   {
     label: 'chai',
     value: 'http://chaijs.com',
-    title:
-      'chai是一个断言库，和Mocha搭配使用更佳，所以合称“抹茶”（其实mocha是咖啡）。“抹茶”特点是： 简单，Hour级学习成本，node和浏览器都可运行',
+    title: 'chai是一个断言库，和Mocha搭配使用更佳，所以合称“抹茶”（其实mocha是咖啡）。“抹茶”特点是： 简单，Hour级学习成本，node和浏览器都可运行',
     tags: ['工具', '测试']
   }
 ]
@@ -179,6 +175,31 @@ export const Github = [
     label: '2008-12-19-github-ribbons',
     value: 'https://github.blog/2008-12-19-github-ribbons/',
     title: '放在开源项目上的角标'
+  },
+  {
+    label: 'enhanced-github',
+    value: 'https://github.blog/2008-12-19-github-ribbons/',
+    title: '显示每个代码文件的大小以及下载链接'
+  },
+  {
+    label: 'Wide Github',
+    value: 'https://github.com/xthexder/wide-github',
+    title: '让 github 支持宽屏'
+  },
+  {
+    label: 'octotree',
+    value: 'https://github.com/buunguyen/octotree',
+    title: '侧边显示 repo 的文件树'
+  },
+  {
+    label: 'concurrently',
+    value: 'https://www.npmjs.com/package/concurrently',
+    title: '使用 concurrent 模块实现同时监听执行多条命令'
+  },
+  {
+    label: 'gm',
+    value: 'https://www.npmjs.com/package/gm',
+    title: 'GraphicsMagick and ImageMagick for node'
   }
 ]
 
