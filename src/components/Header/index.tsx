@@ -4,10 +4,13 @@ const Header: React.FC = () => {
   const [weather, setWeather] = useState()
 
   useEffect(() => {
-    const script = document.createElement("script")
-    script.type = "text/javascript"
-    script.src =
-      "https://api.seniverse.com/v3/weather/now.json?location=beijing&ts=1443079775&ttl=300&uid=[your_uid]&sig=[your_signature]&callback=showWeather"
+    fetch(`https://so-easy.cc/api/weather`)
+      .then(res => {
+        return res.json()
+      })
+      .then(function(response) {
+        console.log("TCL: Header:React.FC -> response", response)
+      })
   })
   return (
     <header className="header">

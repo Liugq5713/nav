@@ -2,7 +2,7 @@ import React from "react"
 
 import "./App.css"
 import ArrayLink from "../src/components/ArrayLink"
-import GithubCorner from "../src/components/GithubCorner"
+// import GithubCorner from "../src/components/GithubCorner"
 import Header from "../src/components/Header"
 import Search from "../src/components/Search"
 import Footer from "../src/components/Footer"
@@ -31,7 +31,6 @@ const App: React.FC = () => {
   // const Cateogries = Object.keys(Links)
   return (
     <div>
-      <GithubCorner />
       <div className="App" id="layout">
         {/* <div id="menu">
           <SideBar cateogries={Cateogries}></SideBar>
