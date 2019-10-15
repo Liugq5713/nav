@@ -37,7 +37,7 @@ const App: React.FC = () => {
         </div> */}
         <Header />
         <div id="main">
-          <div style={{ textAlign: "center" }}>
+          <div>
             <Search options={options} />
           </div>
           <div>{links_el}</div>
