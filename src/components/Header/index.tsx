@@ -3,24 +3,21 @@ import "./style.css"
 import fetch from "../../utils/fetch"
 
 const Header: React.FC = () => {
-  const [weather, setWeather] = useState()
+  const [weather, setWeather] = useState({ text: "", temperature: "" })
 
+  const getWeather = async () => {
+    const res = await fetch(`/weather`)
+    const now = res.data.results[0].now
+    setWeather(now)
+  }
   useEffect(() => {
-    fetch(`/weather`)
-      .then(res => {
-        const {
-          data: { results }
-        } = res
-        setWeather(results[0].now)
-        console.log("TCL: Header:React.FC -> response", results)
-      })
-      .catch(() => {
-        setWeather("获取天气超时")
-      })
-  })
+    getWeather()
+  }, [])
   return (
     <header className="header">
-      <section>{JSON.stringify(weather)}</section>
+      <section>
+        {weather.text} {weather.temperature}
+      </section>
     </header>
   )
 }
