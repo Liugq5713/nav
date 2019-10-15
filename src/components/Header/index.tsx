@@ -13,11 +13,12 @@ const Header: React.FC = () => {
   useEffect(() => {
     getWeather()
   }, [])
+
+  const weatherText =
+    weather.text && `天气：${weather.text} 温度： ${weather.temperature} ℃`
   return (
     <header className="header">
-      <section>
-        {weather.text} {weather.temperature}
-      </section>
+      <section>{weatherText}</section>
     </header>
   )
 }
