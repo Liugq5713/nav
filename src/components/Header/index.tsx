@@ -25,7 +25,7 @@ const Header: React.FC = () => {
           不要忘记别人还在奔跑
           <img className="logo" width="30px" src={pig} alt="" />
         </a>
-        <ul className="header-menu pure-menu-list">
+        <ul className="header-menu pure-menu-heading pure-menu-list">
           <li className="pure-menu-item">{weatherText}</li>
         </ul>
       </div>
