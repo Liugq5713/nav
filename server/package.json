@@ -1,0 +1,28 @@
+{
+  "name": "nav-server",
+  "version": "1.0.0",
+  "description": "前端导航服务端",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liugq5713/nav-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liugq5713/nav-server/issues"
+  },
+  "homepage": "https://github.com/Liugq5713/nav-server#readme",
+  "dependencies": {
+    "koa": "^2.8.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-cors": "0.0.16",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "request": "^2.88.0"
+  }
+}
