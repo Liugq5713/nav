@@ -1,8 +1,8 @@
 interface OptionValue {
-  label: string;
-  value: string;
-  title?: string;
-  tags?: any;
+  label: string
+  value: string
+  title?: string
+  tags?: any
 }
 
 export const Read: Array<OptionValue> = [
@@ -53,8 +53,12 @@ export const Read: Array<OptionValue> = [
   {
     label: "Infoq",
     value: "https://www.infoq.cn/"
+  },
+  {
+    label: "十年踪迹",
+    value: "https://www.h5jun.com/"
   }
-];
+]
 
 export const JavaScript: Array<OptionValue> = [
   {
@@ -105,7 +109,7 @@ export const JavaScript: Array<OptionValue> = [
     title: "阮一峰出品",
     tags: ["文档"]
   }
-];
+]
 export const Css: Array<OptionValue> = [
   {
     label: "css渐变预览及代码生成",
@@ -214,7 +218,7 @@ export const Css: Array<OptionValue> = [
     title: "可以查询到目前CSS3草案部分的相关属性",
     tags: ["CSS资源"]
   }
-];
+]
 export const FE: Array<OptionValue> = [
   {
     label: "Can I use",
@@ -246,7 +250,7 @@ export const FE: Array<OptionValue> = [
     title: "在线Keycode查询",
     tags: ["工具"]
   }
-];
+]
 export const Vue: Array<OptionValue> = [
   {
     label: "Vue技术揭秘",
@@ -256,7 +260,7 @@ export const Vue: Array<OptionValue> = [
     label: "Vue技术内幕",
     value: "http://hcysun.me/vue-design/art/"
   }
-];
+]
 export const Regex: Array<OptionValue> = [
   {
     label: "正则表达式",
@@ -279,7 +283,7 @@ export const Regex: Array<OptionValue> = [
     title: "一个用JS写的在线正则测试工具",
     tags: ["工具", "正则"]
   }
-];
+]
 
 export const Git: Array<OptionValue> = [
   {
@@ -298,7 +302,7 @@ export const Git: Array<OptionValue> = [
     label: "根据选择生成.gitignore文件",
     value: "https://www.gitignore.io/"
   }
-];
+]
 export const Webpack: Array<OptionValue> = [
   {
     label: "深入浅出 Webpack",
@@ -312,7 +316,7 @@ export const Webpack: Array<OptionValue> = [
     label: "带你用合理的姿势使用 webpack4",
     value: "https://juejin.im/post/5b56909a518825195f499806"
   }
-];
+]
 export const OnlineEdit: Array<OptionValue> = [
   {
     label: "jsBin",
@@ -335,14 +339,14 @@ export const OnlineEdit: Array<OptionValue> = [
     title: "前端工程师必备的技术网站，直接在显示编辑代码片段并分享。",
     tags: ["工具", "互交设计", "在线编辑器"]
   }
-];
+]
 
 export const Interview: Array<OptionValue> = [
   {
     label: "前端面试问题",
     value: "https://github.com/h5bp/Front-end-Developer-Interview-Questions"
   }
-];
+]
 
 export const Community: Array<OptionValue> = [
   {
@@ -359,7 +363,7 @@ export const Community: Array<OptionValue> = [
     value: "http://www.jstips.co/",
     title: "每天推出一个JS技巧的网站"
   }
-];
+]
 
 export const Tutorial: Array<OptionValue> = [
   {
@@ -386,7 +390,7 @@ export const Tutorial: Array<OptionValue> = [
     label: "前端面试图谱",
     value: "https://yuchengkai.cn/docs/frontend/"
   }
-];
+]
 
 export const Book: Array<OptionValue> = [
   {
@@ -402,4 +406,4 @@ export const Book: Array<OptionValue> = [
     label: "中文排版指北",
     value: "https://github.com/sparanoid/chinese-copywriting-guidelines"
   }
-];
+]
