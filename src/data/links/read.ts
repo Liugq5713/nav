@@ -57,6 +57,10 @@ export const Read: Array<OptionValue> = [
   {
     label: "十年踪迹",
     value: "https://www.h5jun.com/"
+  },
+  {
+    label: "alligator.io",
+    value: "https://alligator.io/"
   }
 ]
 
@@ -111,6 +115,23 @@ export const JavaScript: Array<OptionValue> = [
   }
 ]
 export const Css: Array<OptionValue> = [
+  {
+    label: "CSS 可视化指南",
+    value: "https://cssreference.io/"
+  },
+  {
+    label: "HTML可视化指南",
+    value: "https://htmlreference.io/"
+  },
+  {
+    label: "flexbox playground",
+    value:
+      "https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/"
+  },
+  {
+    label: "grid playground",
+    value: "https://grid.layoutit.com/"
+  },
   {
     label: "css渐变预览及代码生成",
     value: "https://www.html.cn/tool/css3Preview/Box-Shadow.html"
