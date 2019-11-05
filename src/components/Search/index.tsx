@@ -28,16 +28,19 @@ class Search extends Component<SearchProps, SearchState> {
       this.searchInput.current && this.searchInput.current.focus()
     }
     if (e.keyCode === 13) {
-      if (this.state.inputVal) {
-        window.open(this.state.inputVal)
-      }
+      this.skipToNewPage(this.state.inputVal)
     }
   }
 
   handleChange(event: any) {
     this.setState({ inputVal: event.target.value })
-    if (event.target.value && event.target.value.includes("https://")) {
-      window.open(event.target.value, "_blank")
+    this.skipToNewPage(event.target.value)
+  }
+
+  skipToNewPage(url = this.state.inputVal): void {
+    console.log({ url })
+    if (url && url.includes("https://")) {
+      window.open(url, "_blank")
     }
   }
   render() {
@@ -54,18 +57,33 @@ class Search extends Component<SearchProps, SearchState> {
       )
     })
     return (
-      <div style={{ padding: "10px 5px" }}>
+      <div
+        style={{
+          textAlign: "center",
+          paddingBottom: "10px",
+          marginTop: "-40px"
+        }}
+      >
         <input
           type="text"
           name="website"
           list="website"
           value={inputVal}
+          style={{ maxWidth: "600px" }}
           className="search--input"
           onChange={e => this.handleChange(e)}
           ref={this.searchInput}
           placeholder="请输入网址or网址名"
         />
         <datalist id="website">{options_el}</datalist>
+
+        <button
+          style={{ marginLeft: "15px", height: "45px" }}
+          onClick={() => this.skipToNewPage()}
+          className="pure-button pure-button-primary button-xlarge"
+        >
+          Enter 跳转
+        </button>
       </div>
     )
   }

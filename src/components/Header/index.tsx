@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./style.css"
-import pig from "./pig.svg"
+import eastwood from "./eastwood-come-back-later.png"
 
 import fetch from "../../utils/fetch"
 
@@ -19,17 +19,16 @@ const Header: React.FC = () => {
   const weatherText =
     weather.text && `上海 ${weather.text} ${weather.temperature} ℃`
   return (
-    <header className="header">
-      <div className="pure-menu pure-menu-horizontal">
-        <a href="#" className="pure-menu-heading">
-          不要忘记别人还在奔跑
-          <img className="logo" width="30px" src={pig} alt="" />
-        </a>
-        <ul className="header-menu pure-menu-heading pure-menu-list">
-          <li className="pure-menu-item">{weatherText}</li>
-        </ul>
+    <div>
+      <header className="header">
+        <span className="header-weather" style={{ float: "right" }}>
+          {weatherText}
+        </span>
+      </header>
+      <div style={{ textAlign: "center" }}>
+        <img style={{ maxWidth: "600px" }} src={eastwood} alt="sss" />
       </div>
-    </header>
+    </div>
   )
 }
 

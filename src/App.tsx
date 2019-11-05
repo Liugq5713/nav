@@ -37,7 +37,7 @@ const App: React.FC = () => {
         </div> */}
         <Header />
         <div id="main">
-          <div>
+          <div style={{ marginBottom: "30px" }}>
             <Search options={options} />
           </div>
           <div>{links_el}</div>

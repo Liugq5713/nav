@@ -1,35 +1,8 @@
 .header {
-  background-color: #191818;
-  color: white;
+  color: #333;
+  font-size: 18px;
 }
-.header-menu {
-  float: right;
-}
-.pure-menu-heading {
-  color: white;
-}
-.pure-menu-item {
-  color: white;
-}
-.logo {
-  animation: changebox 1s ease-in-out 1s infinite alternate running forwards;
-}
-
-@keyframes changebox {
-  10% {
-    transform: rotate(7deg);
-  }
-  50% {
-    transform: rotate(-5deg);
-  }
-  70% {
-    transform: rotate(7deg);
-  }
-  100% {
-    transform: rotate(-7deg);
-  }
-}
-
-.logo:hover {
-  animation-play-state: paused;
+.header-weather {
+  position: absolute;
+  right: 20px;
 }
