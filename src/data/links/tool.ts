@@ -169,7 +169,7 @@ export const Source = [
   }
 ];
 
-export const NewCompute = [
+export const WhenYouHaveNewComputer = [
   {
     label: "不用翻墙的google chrome下载",
     value: "https://tools.shuax.com/chrome/",
