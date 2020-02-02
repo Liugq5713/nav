@@ -174,6 +174,16 @@ export const NewCompute = [
     label: "不用翻墙的google chrome下载",
     value: "https://tools.shuax.com/chrome/",
     title: "chrome 安装地址"
+  },
+  {
+    label: "window镜像（i tell you）",
+    value: "http://msdn.itellyou.cn/",
+    title: "还挺干净的"
+  },
+  {
+    label: "制作windows启动盘",
+    value: "https://rufus.ie/",
+    title: "小巧干净"
   }
 ];
 
