@@ -232,5 +232,13 @@ export const OtherNav = [
   {
     label: "前端开发网址导航",
     value: "http://nav.web-hub.cn/"
+  },
+  {
+    label: "码力全开",
+    value: "https://www.maliquankai.com/"
+  },
+  {
+    label: "pan awesome-bookmarks",
+    value: "https://panjiachen.github.io/awesome-bookmarks/"
   }
 ];
