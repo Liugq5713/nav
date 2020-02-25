@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Liugq5713/nav-server#readme",
   "dependencies": {
+    "ignore-styles": "^5.0.1",
     "koa": "^2.8.1",
     "koa-bodyparser": "^4.2.1",
     "koa-cors": "0.0.16",
