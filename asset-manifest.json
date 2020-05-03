@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/nav/static/css/main.c64b2969.chunk.css",
+    "main.js": "/nav/static/js/main.babe3e7e.chunk.js",
+    "main.js.map": "/nav/static/js/main.babe3e7e.chunk.js.map",
+    "runtime~main.js": "/nav/static/js/runtime~main.98ee6b15.js",
+    "runtime~main.js.map": "/nav/static/js/runtime~main.98ee6b15.js.map",
+    "static/js/2.c295d427.chunk.js": "/nav/static/js/2.c295d427.chunk.js",
+    "static/js/2.c295d427.chunk.js.map": "/nav/static/js/2.c295d427.chunk.js.map",
+    "index.html": "/nav/index.html",
+    "precache-manifest.d1ec58882c89564edd1b6fc6677aacde.js": "/nav/precache-manifest.d1ec58882c89564edd1b6fc6677aacde.js",
+    "service-worker.js": "/nav/service-worker.js",
+    "static/css/main.c64b2969.chunk.css.map": "/nav/static/css/main.c64b2969.chunk.css.map",
+    "static/media/eastwood-come-back-later.png": "/nav/static/media/eastwood-come-back-later.ca098fd9.png"
+  }
+}
