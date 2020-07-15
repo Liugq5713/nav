@@ -30,14 +30,14 @@ export const Code = [
     value: "https://www.toolfk.com/",
     title: "专供程序员使用的一些在线工具",
   },
-];
+]
 
 export const File = [
   {
     label: "PDF 处理",
     value: "https://www.ilovepdf.com/",
   },
-];
+]
 export const Image = [
   {
     label: "生成代码图片",
@@ -82,7 +82,11 @@ export const Image = [
     label: "ASCII 码字符画在线绘制",
     value: "http://asciiflow.com/",
   },
-];
+  {
+    label: "mac 壁纸",
+    value: "https://paper.meiyuan.in/",
+  },
+]
 
 export const Lib = [
   {
@@ -113,7 +117,7 @@ export const Lib = [
       "chai是一个断言库，和Mocha搭配使用更佳，所以合称“抹茶”（其实mocha是咖啡）。“抹茶”特点是： 简单，Hour级学习成本，node和浏览器都可运行",
     tags: ["工具", "测试"],
   },
-];
+]
 export const Source = [
   {
     label: "渐变色网站",
@@ -172,7 +176,7 @@ export const Source = [
     title: "强大的简约图标库",
     tags: ["图标"],
   },
-];
+]
 
 export const WhenYouHaveNewComputer = [
   {
@@ -190,7 +194,7 @@ export const WhenYouHaveNewComputer = [
     value: "https://rufus.ie/",
     title: "小巧干净",
   },
-];
+]
 
 export const Github = [
   {
@@ -223,7 +227,7 @@ export const Github = [
     value: "https://www.npmjs.com/package/gm",
     title: "GraphicsMagick and ImageMagick for node",
   },
-];
+]
 
 export const OtherNav = [
   {
@@ -246,4 +250,4 @@ export const OtherNav = [
     label: "pan awesome-bookmarks",
     value: "https://panjiachen.github.io/awesome-bookmarks/",
   },
-];
+]
