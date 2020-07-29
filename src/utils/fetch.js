@@ -1,8 +1,8 @@
-import axios from 'axios'
+import axios from "axios";
 
 const fetchInstance = axios.create({
-  baseURL: 'https://so-easy.cc/api',
+  baseURL: "http://10.227.14.200:4444",
   timeout: 2000,
-})
+});
 
-export default fetchInstance
+export default fetchInstance;

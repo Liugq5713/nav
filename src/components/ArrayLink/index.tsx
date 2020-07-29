@@ -1,22 +1,27 @@
-import React from 'react'
-import './style.css'
+import React from "react";
+import "./style.css";
 
 export interface LinkProps {
-  title: string
-  links: Array<{ value: string; label: string; title?: string }>
+  title: string;
+  links: Array<{ link: string; name: string; id?: number }>;
 }
 
-const ArrayLink: React.FC<LinkProps> = props => {
-  const links = props.links.map(link => {
+const ArrayLink: React.FC<LinkProps> = (props) => {
+  const links = props.links.map((link) => {
     return (
-      <li key={link.value} className="card link-item">
-        <a href={link.value} title={link.title} target="_blank" rel="noopener noreferrer">
-          {link.label}
+      <li key={link.id} className="card link-item">
+        <a
+          href={link.link}
+          title={link.name}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {link.name}
         </a>
       </li>
-    )
-  })
-  const { title } = props
+    );
+  });
+  const { title } = props;
   return (
     <div className="link-wrapper layout">
       <div>
@@ -26,7 +31,7 @@ const ArrayLink: React.FC<LinkProps> = props => {
         <ul className="links">{links}</ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ArrayLink
+export default ArrayLink;
